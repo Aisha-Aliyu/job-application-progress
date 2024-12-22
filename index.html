@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Progress Steps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress-steps">
+        <div class="step active">Step 1</div>
+        <div class="step">Step 2</div>
+        <div class="step">Step 3</div>
+        <div class="step">Step 4</div>
+        <div class="step">Step 5</div>
+        <div class="step">Step 6</div>
+      </div>
+
+      <h1>Aisha Job Inc Application</h1>
+      <div class="form">
+        <form action="https://formspree.io/f/mvgowqdr" method="POST" >
+        <div class="step-content active">
+
+            <h2>Personal Information</h2>
+
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" required>
+          
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" id="phone-number" name="phone-number" required>
+
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <div class="step-content">
+
+            <h2>Education</h2>
+
+            <label for="education">Highest Level of Education</label>
+            <select id="education" name="education" required>
+              <option value="">Select</option>
+              <option value="high-school">High School</option>
+              <option value="bachelor">Bachelor's Degree</option>
+              <option value="master">Master's Degree</option>
+              <option value="phd">Ph.D.</option>
+            </select>
+
+            <label for="institution">Institution Name</label>
+            <input type="text" id="institution-name" name="institution-name" required>
+
+            <label for="field-of-study">Field of Study</label>
+            <input type="text" id="field" name="field" required>
+
+            <label for="graduation">Graduation Date</label>
+            <input type="date" id="graduation" name="graduation" required>
+            
+            <button class="prev-btn">Previous</button>
+            <button class="next-btn">Next</button>
+          </div>
+
+          <div class="step-content">
+
+            <h2>Work Experience</h2>
+
+            <label for="job">Job Title</label>
+            <input type="text" id="job-title" name="job-title" required>
+
+            <label for="company">Company Name</label>
+            <input type="text" id="company-name" name="company-name" required>
+
+            <label for="location">Location</label>
+            <input type="text" id="field" name="field" >
+
+            <label for="Responsibilities" style="margin-bottom: 20px;">Describe your Responsibilities/Key Achievements</label>
+            <textarea name="Responsibilities" id="Responsibilities" rows="5" required></textarea>
+            <br>
+            <button class="prev-btn">Previous</button>
+            <button class="next-btn">Next</button>
+          </div>
+
+          <div class="step-content">
+
+            <h2>Skills</h2>
+
+            <label for="skills">Select All Relevant Skills</label>
+            <select id="skills" name="skills" multiple size="4" required>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="javascript">Javascript</option>
+              <option value="react">React</option>
+              <option value="python">Python</option>
+              <option value="sql">SQL</option>
+              <option value="uiux">UI/UX Design</option>
+              <option value="seo">SEO</option>
+              <option value="php">PHP</option>
+              <option value="angular">Angular</option>
+              <option value="Vue">Vue</option>
+            </select>
+
+            <button class="prev-btn">Previous</button>
+            <button class="next-btn">Next</button>
+          </div>
+
+          <div class="step-content">
+            <label>Preferred Work Location</label>
+            <div class="checkbox-group">
+              <label for="location1"><input type="checkbox" id="location1" name="location" value="remote"> Remote</label>
+              <label for="location2"><input type="checkbox" id="location2" name="location" value="office"> Office</label>
+              <label for="location3"><input type="checkbox" id="location3" name="location" value="both"> Both</label>
+            </div>
+            
+            <label for="salary">Expected Salary ($)</label>
+            <input type="number" id="salary" name="salary" required>
+            
+            <button class="prev-btn">Previous</button>
+            <button class="next-btn">Next</button>
+          </div>
+
+          <div class="step-content">
+
+            <h2>Attachments</h2>
+
+
+            <label for="resume">Write your Cover Letter</label>
+            <textarea name="cover-letter" id="cover-letter" rows="5"></textarea>
+
+            
+            <button type="button" class="prev-btn">Previous</button>
+            <button type="submit" class="submit-btn">Submit</button>
+          </div>
+          </form>
+
+
+          <script src="script.js"></script>
+</body>
+</html>
